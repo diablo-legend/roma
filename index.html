@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAR</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <a href="#home"><img src="IMG/logo.svg" alt="Logo" /></a>
+      </div>
+      <div class="burger-menu" onclick="toggleMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#About us">About us</a></li>
+        <li><a href="#Order ">Order </a></li>
+        
+      </ul>
+    </nav>
+    <script>
+      function toggleMenu() {
+        const menu = document.querySelector(".nav-menu");
+        const burger = document.querySelector(".burger-menu");
+        menu.classList.toggle("active");
+        burger.classList.toggle("active");
+      }
+    </script>
+    
+    <div class="green-bar">
+      <div class="Heading">
+        <img src="IMG/Heading1.svg" alt="Описание изображения" />
+      </div>
+    </div>
+    <div class="subtitle">
+      <img src="IMG/subtitle.svg" alt="Описание изображения" />
+    </div>
+    <article id="About us"></article>
+    <div class="text-container">
+      <span class="highlight">I am</span> a professional and<br>skilled quality content creator...
+  </div>
+</article>
+  <div class="container">
+</div>
+<div class="info">
+  <img src="IMG/info.svg" alt="Описание изображения" />
+</div>
+<article id="Portfolio"></article>
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/hrt4i934xUU?si=jbii9JBNl3_AXZY_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe src="https://www.youtube.com/embed/Jdht_TNeBak?si=M_H1tqY4o2znkDvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</article>
+</body>
+</html>
