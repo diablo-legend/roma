@@ -456,6 +456,15 @@ html {
   }
 }
 
+@media (max-width: 425px) {
+
+  .Heading img {
+    width: 250px !important;
+    margin-left: -3%;
+  }
+}
+
+
 @media (max-width: 1430px) {
   
   .text-container {
