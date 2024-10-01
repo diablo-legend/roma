@@ -451,6 +451,9 @@ html {
     width: 50px;
     margin-top: 1%;
   }
+  .Heading img {
+    width: 350px !important;
+  }
 }
 
 @media (max-width: 1430px) {
