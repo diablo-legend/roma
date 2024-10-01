@@ -232,10 +232,10 @@ html {
   margin-top: 5%;
 }
 
-@media (max-width: 725px) {
+@media (max-width: 775px) {
   .Heading img {
     content: url("IMG/HeadingMini.svg");
-    width: 90%;
+    width: 100% !important;
     margin-top: 15%;
   }
   .highlight {
@@ -245,7 +245,18 @@ html {
     font-size: 32px;
   }
 }
-
+@media (max-width: 425px) {
+  .Heading img {
+    content: url("IMG/HeadingMini.svg");
+    width: 70% !important;
+    height: auto;
+    margin-top: 25%;
+    margin-left: 55px;
+  }
+  .green-bar {
+    height: 340px !important;
+  }
+}
 /* --------------------*/ /* --------------------*/ /* --------------------*/
 
 /* Подзаголовок */
@@ -294,6 +305,8 @@ html {
   }
 }
 
+
+
 @media (max-width: 600px) {
   .text-container {
     font-size: 28px;
@@ -311,9 +324,7 @@ html {
   .video {
    margin-top: 15%;
   }
-  .video iframe {
-    
-   }
+
 }
 
   nav {
@@ -352,7 +363,7 @@ html {
 
 
 /* Адаптация для 4K (3840x2160) экранов */
-@media only screen and (min-width: 3840px) {
+@media only screen and (min-width: 3560px) {
   body {
     font-size: 2em;
   }
@@ -362,10 +373,11 @@ html {
     font-size: 54px;
   }
   nav img {
-    width: 200%;
+    width: 250%;
   }
   .nav-menu {
     gap: 80px;
+    font-size: 58px;
   }
 
   .burger-menu {
@@ -374,20 +386,28 @@ html {
   }
 
   .green-bar {
-    height: 1250px;
+    height: 1050px !important;
   }
 
   .Heading img {
-    width: 2200px;
+    width: 2000px;
   }
 
   .text-container {
-    font-size: 140px;
+    font-size: 120px;
     margin-top: 8%;
   }
 
   .info img {
-    width: 50%;
+    width: 60%;
+  }
+
+
+  .video iframe {
+    width: 90% !important; /* Видео занимает всю ширину контейнера */
+    height: auto; /* Высота автоматически подстраивается под ширину */
+    max-width: 2800px !important; /* Максимальная ширина для больших экранов */
+    margin-left: 15%;
   }
 }
 
@@ -412,16 +432,13 @@ html {
   box-shadow: 0 6px 40px rgba(172, 172, 172, 0.7); /* Тень для красоты */
   border-radius: 18px; /* Закругленные углы */
 }
-@media (max-width: 2560px) {
-  .video {
-  
-  }
-}
+
 
 @media (max-width: 768px) {
   .video iframe {
-    width: 100%; /* Занимает всю ширину контейнера */
+    width: 70%; /* Занимает всю ширину контейнера */
     height: auto; /* Высота автоматически подстраивается */
+    padding: 0 20px; /* Добавляем отступы для небольших экранов */
   }
 }
 
